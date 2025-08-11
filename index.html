@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>For my witch</title>
+  
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8" />
+
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<title>Two Months With You</title>
+
+<style>
+
+  body {
+
+    margin: 0;
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    background: linear-gradient(135deg, #2ecc71, #27ae60);
+
+    color: white;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    min-height: 100vh;
+
+    padding: 20px;
+
+  }
+
+  .card {
+
+    background: rgba(255, 255, 255, 0.08);
+
+    padding: 20px 25px 30px;
+
+    border-radius: 20px;
+
+    backdrop-filter: blur(10px);
+
+    text-align: center;
+
+    max-width: 520px;
+
+    border: 1px solid rgba(255, 255, 255, 0.2);
+
+    user-select: none;
+
+  }
+
+  .heart {
+
+    font-size: 3rem;
+
+    margin-bottom: 10px;
+
+  }
+
+  .button {
+
+    background: white;
+
+    color: #27ae60;
+
+    padding: 10px 22px;
+
+    border-radius: 25px;
+
+    font-weight: bold;
+
+    border: none;
+
+    cursor: pointer;
+
+    margin-top: 10px;
+
+    transition: background-color 0.3s ease;
+    }
+
+  .button:hover {
+
+    background-color: #2ecc71;
+
+    color: white;
+
+  }
+
+  .message {
+
+    display: none;
+
+    margin-top: 20px;
+
+    text-align: left;
+
+    line-height: 1.6;
+
+    font-size: 1rem;
+
+  }
+
+  .footer {
+
+    font-size: 0.9rem;
+
+    color: rgba(255, 255, 255, 0.7);
+
+    margin-top: 25px;
+
+  }
+
+  .signature {
+
+    margin-top: 20px;
+
+    font-style: italic;
+
+    text-align: right;
+
+    font-weight: 600;
+
+  }
+
+  .emoji-container {
+
+    margin-top: 18px;
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 25px;
+
+    font-size: 2rem;
+
+    cursor: pointer;
+
+    user-select: none;
+
+  }
+
+  .emoji-label {
+
+    margin-top: 6px;
+
+    font-size: 0.9rem;
+
+    color: rgba(255, 255, 255, 0.8);
+
+    text-align: center;
+
+  }
+
+  .love {
+
+    margin-top: 25px;
+
+    font-size: 1.3rem;
+
+    text-align: center;
+    }
+
+</style>
+
+</head>
+
+<body>
+
+<div class="card">
+
+  <div class="heart">♥</div>
+
+  <h2>Two Months With You</h2>
+
+  <p>I made something for you — press the button when you're ready.</p>
+
+  <button class="button" onclick="showMessage()">Open</button>
+
+  <div class="message" id="msg">
+
+    <p>
+      
+      <p><em>For my witch, </em></p>
+
+      You are my anomaly. My paradox. I remember the first time I held your hand — in that moment, time went fast and slow all at once. Everything felt right: my heart raced while the world moved in gentle slow motion. You defy the laws of physics when you're around me. You make gravity selective, pulling me only toward you. You bend the ordinary into something quietly magical. Two months in, I'm still falling, still in awe, and forever thankful it's your hand I get to hold.
+
+    </p>
+    
+    <div class="signature">-ayban</div>
+
+    <div class="emoji-container">
+      <div onclick="toggleBroom()" id="broom" title="Click me!">🧹</div>
+
+      <div onclick="toggleTurtle()" id="turtle" title="Click me!">🐢</div>
+
+    </div>
+
+    <div class="emoji-label" id="turtleName" style="display:none;">Wilson</div>
+
+  </div>
+
+  <div class="love" id="loveMsg" style="display:none;">I love you 🤍</div>
+
+  <div class="footer">Made with care — Happy Two Months </div>
+
+</div>
+
+<script>
+
+  function showMessage() {
+
+    document.getElementById("msg").style.display = "block";
+
+    document.getElementById("loveMsg").style.display = "block";
+    }
+
+  function toggleBroom() {
+
+    const broom = document.getElementById("broom");
+
+    broom.textContent = broom.textContent === "🧹" ? "🧙" : "🧹";
+
+  }
+
+  function toggleTurtle() {
+
+    const turtle = document.getElementById("turtle");
+
+    const label = document.getElementById("turtleName");
+
+    if (label.style.display === "none") {
+
+      label.style.display = "block";
+
+      turtle.style.opacity = "0.5";
+
+    } else {
+
+      label.style.display = "none";
+
+      turtle.style.opacity = "1";
+
+    }
+
+  }
+
+</script>
+
+</body>
+
+</html>
+<!-- partial -->
+  
+</body>
+</html>
